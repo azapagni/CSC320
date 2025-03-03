@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class TaxRate {
-    public static void main (String[] args) {
+	public static void main(String[] args) {
         Scanner scnr = new Scanner(System.in);
         float userIncome;
         
@@ -17,7 +17,7 @@ public class TaxRate {
             System.out.print("Tax amount is " + (.15 * userIncome));
         }
         else if (userIncome >= 1500 && userIncome < 2500) {
-            System.out.println("Tax rate is 20%"))
+            System.out.println("Tax rate is 20%");
             System.out.print("Tax amount is " + (.20 * userIncome));
         }
         else if (userIncome >= 2500) {
@@ -26,6 +26,7 @@ public class TaxRate {
         }
         else {
             System.out.print("Error, please try again.");
-            System.exit(1)
+            System.exit(1);
         }
-    }
+	}
+}
